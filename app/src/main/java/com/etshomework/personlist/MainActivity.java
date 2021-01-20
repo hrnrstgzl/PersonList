@@ -94,7 +94,6 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
         personAdapter = new PersonAdapter(this, (ArrayList<Person>) personDal.getPersons());
         recyclerView.setAdapter(personAdapter);
-        recyclerView.smoothScrollToPosition(3);
     }
 
     private void initSwipe() {
